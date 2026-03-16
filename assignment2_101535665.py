@@ -170,12 +170,9 @@ def load_past_scans():
 
     except:
         print("No past scans found.")
-
-
 if __name__ == "__main__":
 
     try:
-
         target = input("Enter target IP (default 127.0.0.1): ")
 
         if target == "":
@@ -184,13 +181,13 @@ if __name__ == "__main__":
         start_port = int(input("Enter start port (1-1024): "))
         end_port = int(input("Enter end port (1-1024): "))
 
-     if start_port < 1 or end_port > 1024:
-    print("Port must be between 1 and 1024")
-    exit()
+        if start_port < 1 or end_port > 1024:
+            print("Port must be between 1 and 1024.")
+            exit()
 
-    if end_port < start_port:
-    print("End port must be greater than or equal to start port")
-    exit())
+        if end_port < start_port:
+            print("End port must be greater than or equal to start port.")
+            exit()
 
         scanner = PortScanner(target)
 
