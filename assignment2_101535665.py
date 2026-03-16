@@ -216,8 +216,11 @@ if __name__ == "__main__":
 
 
 # Q5: New Feature Proposal
-# One feature I would add is the ability to export scan results to a CSV file.
-# This would allow users to easily analyze scan data using spreadsheet tools.
-# A list comprehension could be used to quickly format the results list into
-# rows before writing them to the CSV file.
-# Diagram: See diagram_101535665D.png in the repository roott
+# One additional feature I would add is a Port Risk Classifier that categorizes
+# open ports into High, Medium, or Low security risk levels. The program would
+# loop through the open ports and use nested if-statements to check whether a
+# port belongs to known high-risk or medium-risk groups, otherwise classifying
+# it as low risk. This helps users quickly understand which open ports may pose
+# the greatest security threat on the system.
+
+# Diagram: See diagram_101535665.png in the repository root 
