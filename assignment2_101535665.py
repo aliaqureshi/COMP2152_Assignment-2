@@ -185,7 +185,10 @@ if __name__ == "__main__":
         end_port = int(input("Enter end port (1-1024): "))
 
         if start_port < 1 or end_port > 1024:
-            print("Port must be between 1 and 1024")
+            print("Port must be between 1 and 1024"
+exit()
+if end_port < start_port:
+    print("End port must be greater than or equal to start port"))
             exit()
 
         scanner = PortScanner(target)
